@@ -1,0 +1,21 @@
+{
+  "name": "Kget Capture",
+  "version": "1.0",
+  "description": "Kget Chrome Browser Extension to capture Downloads",
+  "manifest_version": 2,
+  "author": "Kunal Deshpande",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "nativeMessaging",
+    "downloads"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

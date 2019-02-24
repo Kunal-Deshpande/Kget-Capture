@@ -1,0 +1,9 @@
+{
+  "name": "com.kget.capture",
+  "description": "Kget Integrator",
+  "path":"/home/kunal/.config/google-chrome/NativeMessagingHosts/kgetcapture.py" ,
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://kmgoengknefbppeknnieobocfpfbplkc/"
+  ]
+}
