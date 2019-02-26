@@ -32,3 +32,5 @@ git clone https://github.com/Kunal-Deshpande/Kget-Capture.git
 1. Go to chrome://extensions/
 2. Turn on Developer Mode
 3. Click Load Unpacked and select folder repository folder
+
+### Change allowed_origins in com.kget.capture.json to chrome-extension://ID/ where ID refers to the Extension ID in Chrome
