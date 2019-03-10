@@ -7,24 +7,17 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <style>
-        .box {
-            border: 2px solid grey;
-            border-radius: 3px;
-            margin: 10px;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="popup.css">
 
 </head>
-<body style="width: 200px; background-color: aliceblue">
+<body style="width: 250px;">
 
-<div class="box">
-    <div class="custom-control custom-checkbox mr-sm-2">
-        <input type="checkbox" class="custom-control-input" id="isKgetEnabled">
-        <label class="custom-control-label" for="isKgetEnabled">Kget Integration</label>
-    </div>
+<div class="content">
+    Kget Capture
+    <label class="switch">
+        <input id="isKgetEnabled" type="checkbox" class="success">
+        <span class="slider round"></span>
+    </label>
 </div>
 
 <script type="text/javascript" src="popup.js"></script>
