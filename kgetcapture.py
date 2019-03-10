@@ -14,20 +14,19 @@ try:
         os.system('kget --showDropTarget ' + message['text'])
 
 
-    def sendMessage():
-        message = "Received Download URL"
-        json_message = json.dumps(message).encode('utf-8')
-        message_length = struct.pack('@I', len(json_message))
-        sys.stdout.buffer.write(message_length)
-        sys.stdout.buffer.write(json_message)
-        sys.stdout.buffer.flush()
-
+    # def sendMessage():
+    #     message = "Received Download URL"
+    #     json_message = json.dumps(message).encode('utf-8')
+    #     message_length = struct.pack('@I', len(json_message))
+    #     sys.stdout.buffer.write(message_length)
+    #     sys.stdout.buffer.write(json_message)
+    #     sys.stdout.buffer.flush()
 
     while True:
         readMessage()
-        sendMessage()
+        # sendMessage()
 
-except:
-    f = open("/home/kunal/Programs/Extensions/kget_extension/testerr.txt", "w")
-    f.write("error")
+except Exception as e:
+    f = open("/home/$USER/ChromeKgetCaptureError.txt", "w")
+    f.write(str(e))
     f.close()
